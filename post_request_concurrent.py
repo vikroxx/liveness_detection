@@ -30,9 +30,9 @@ files =  glob('sample_images/*.jpeg') + glob('sample_images/*.jpg')
 #              open('image2.jpg', 'rb').read(),
 #              open('image3.jpg', 'rb').read()]
 
-files = files * 10
+files = files 
 print(len(files))
-data_list = [open(file, 'rb').read() for file in files]
+data_list = [open(file, 'rb').read() for file in files] 
 # data_list = [file for file in files]
 
 

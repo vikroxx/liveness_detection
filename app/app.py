@@ -126,7 +126,7 @@ def liveness():
         face_arr = faces[0]
         # min_sim_score, mean_sim_score = identityChecker(face_arr)
         liveness_score = livenessDetector(face_arr)
-
+        print(liveness_score.item())
         t2 =(time.time() - t1 )*1000
         response = {
             "message": "Everything is OK.",
